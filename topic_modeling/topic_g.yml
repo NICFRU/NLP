@@ -1,4 +1,9 @@
 wirtschaft:
+        - Steuer
+        - Steuerarten
+        - Einkommensteuer
+        - Finanzierung
+        - Finanzen
         - Wirtschaft
         - Volkswirtschaft
         - Marktwirtschaft
@@ -7,8 +12,7 @@ wirtschaft:
         - Kapitalismus
         - Kommunismus
         - Sozialismus
-        - BIP (Bruttoinlandsprodukt)
-        - BIP pro Kopf
+        - BIP 
         - Inflation
         - Arbeitslosigkeit
         - Zinsen
@@ -19,7 +23,8 @@ wirtschaft:
         - Schutzzölle
         - Freihandel
         - Outsourcing
-        - Angebot und Nachfrage
+        - Angebot 
+        - Nachfrage
         - Konsum
         - Investition
         - Sparen
@@ -35,6 +40,8 @@ wirtschaft:
         - Haushaltsüberschuss
         - Haushalt
         - Steuern
+        - Lehrlinge
+        - Betrag
         - Einnahmen
         - Ausgaben
         - Staatsausgaben
@@ -57,20 +64,7 @@ wirtschaft:
         - Schufa
         - E-Commerce
         - Online-Shopping
-        - Cybersecurity
-        - Identitätsdiebstahl
         - Betrug
-        - Phishing
-        - Malware
-        - Virus
-        - Trojaner
-        - Wurm
-        - Spyware
-        - Ransomware
-        - Cyberangriff
-        - Dienstverweigerung
-        - Hacking
-        - Cyber-Spionage
         - Geistiges Eigentum
         - Patent
         - Warenzeichen
@@ -312,6 +306,8 @@ wirtschaft:
 Klima:
         - Klima
         - Wetter
+        - Umwelt
+        - Gase
         - Temperatur
         - Luftfeuchtigkeit
         - Regen
@@ -474,7 +470,7 @@ Klima:
         - Recycling
         - Müllvermeidung
         - Umweltbewusstsein
-        - Umweltaktivismus
+        - Umwelt
         - Klimabezogene Entwicklungshilfe
         - Klimaschutz
         - Klimaadaptation
@@ -634,15 +630,13 @@ Bildung:
         - Schulpsychotherapeutische Praxis
 Gesundheit:
         - Gesundheit
+        - gesundheitliche
+        - Untersuchungen
         - nationaler Gesundheitsdienst
-        - Sns
-        - Krankenhaus
-        - Krankenhaus
-        - Krankenhaus
+        - Krank
         - Krankenhaus
         - Arzt
         - Ärzte
-        - medizinisch
         - medizinisch
         - Chirurg
         - Chirurgen
@@ -794,7 +788,6 @@ Wissenschaft:
         - Analyse
         - Theorie
         - Hypothese
-        - Gesetz
         - Fakt
         - Verfahren
         - Methode
@@ -938,7 +931,6 @@ soziale Ursachen:
         - Feminist
         - Feministinnen
         - Rassismus
-        - Rassismus
         - rassistisch
         - Rassisten
         - Fremdenfeindlichkeit
@@ -952,15 +944,12 @@ soziale Ursachen:
         - Minderheit
         - Minderheiten
         - Frauen
-        - Frauen
-        - Angehörige der Farbigen
         - Angehörige der Farbigen
         - fortschrittlich
         - fortschrittlich
         - Reform
         - reformiert
         - im Ruhestand
-        - richtig
         - Rechte
         - menschlich
         - menschlich
@@ -1051,6 +1040,7 @@ soziale Ursachen:
         - Korruptionbekämpfung
         - Kreislaufwirtschaft
         - Krieg
+        - Ausland
         - Kriegsverbrechen
         - Mädchenrechte
         - Männerrechte
@@ -1156,9 +1146,6 @@ soziale Ursachen:
         - Partizipationsmöglichkeiten
         - Persönlichkeitsentwicklung
         - Pluralismus
-        - Politische Bildung
-        - Politische Teilhabe
-        - Politik
         - Populismus
         - Prävention
         - Rechtsextremismus
@@ -1189,11 +1176,8 @@ soziale Ursachen:
         - Äquivalenz
         - Ökologiebewusstsein
 Politik und Ideologie:
-        - Politik
-        - politisch
         - Regierung
-        - Regierung
-        - staatlich
+        - Rechtsstaat
         - Steuerung
         - Gouvernements
         - Herrscher
@@ -1223,9 +1207,6 @@ Politik und Ideologie:
         - Liberale
         - Liberalismus
         - Meritokratie
-        - Demokratie
-        - Demokratin
-        - Demokraten
         - Autokratie
         - Diktatur
         - Diktaturen
@@ -1241,46 +1222,12 @@ Politik und Ideologie:
         - Anarchien
         - Anarchist
         - Anarchisten
-        - europa
+        - Europa
         - europäisch
         - Europäer
         - Europäertum
         - Europäismen
         - Europäismen
-        - Globalisierung
-        - Globalisierungen
-        - globalisiert
-        - globalisierend
-        - Regionalisierung
-        - Regionalisierungen
-        - regionalisiert
-        - regionalisierend
-        - Regionalisierer
-        - Urbanisierung
-        - Urbanisierungen
-        - verstädtert
-        - Stadtplaner
-        - verstädternd
-        - Urbanisierer
-        - verstädternd
-        - städtisch
-        - städtisch
-        - Stadtplaner
-        - Stadtplaner
-        - urbanistisch
-        - städtisch
-        - städtisch
-        - städtisch
-        - ländlich
-        - stadt
-        - Städte
-        - stadt
-        - Stadtbewohnerinnen
-        - Staatsangehörigkeit
-        - Bürger
-        - Stadt
-        - Dörfer
-        - Gesetz
         - Gesetze
         - föderal
         - Zustand
@@ -1292,30 +1239,14 @@ Politik und Ideologie:
         - föderalistisch
         - Föderalisierung
         - Föderalisierungen
-        - Wahl
-        - Wahlen
-        - Wähler
-        - Wählerschaft
-        - Wählerschaften
-        - kurfürstlich
-        - Stimmen
-        - Stimmen
-        - stimmberechtigt
-        - stimmberechtigt
-        - stimmberechtigt
-        - Wähler
-        - Wähler
         - Rechtsvorschriften
         - Gesetze gegeben
         - gesetzgebend
         - gesetzgebend
         - Autarkie
         - selbstherrlich
-        - Hof
-        - Partei
         - Regierung
         - Parlament
-        - Wahl
         - Demokratie
         - Republik
         - Bundeskanzler
@@ -1379,6 +1310,7 @@ Politik und Ideologie:
         - Integrationspolitik
         - Asylpolitik
         - EU-Politik
+        - Nato
         - Nato-Politik
         - Friedenspolitik
         - Entwicklungspolitik
@@ -1415,6 +1347,8 @@ Politik und Ideologie:
         - Globales Süd-Süd-Zusammenspiel
         - Nord-Süd-Beziehung
 Infrastruktur:
+        - mobilisierung
+        - Digitalisierung
         - Infrastruktur
         - Infrastruktur
         - Eisenbahnen
@@ -1540,3 +1474,37 @@ Infrastruktur:
         - Verkehrsausschüsse
         - Verkehrskonferenzen
         - Verkehrsparlamente
+        - Globalisierung
+        - Globalisierungen
+        - globalisiert
+        - globalisierend
+        - Regionalisierung
+        - Regionalisierungen
+        - regionalisiert
+        - regionalisierend
+        - Regionalisierer
+        - Urbanisierung
+        - Urbanisierungen
+        - verstädtert
+        - Stadtplaner
+        - verstädternd
+        - Urbanisierer
+        - verstädternd
+        - städtisch
+        - städtisch
+        - Stadtplaner
+        - Stadtplaner
+        - urbanistisch
+        - städtisch
+        - städtisch
+        - städtisch
+        - ländlich
+        - stadt
+        - Städte
+        - stadt
+        - Stadtbewohnerinnen
+        - Staatsangehörigkeit
+        - Bürger
+        - Stadt
+        - Dörfer
+        - Gesetz
