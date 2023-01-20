@@ -30,7 +30,8 @@ with st.sidebar:
 
 def main():
     st.title("NLP Web App")
-    menu = ["--select--", "Exploration", "Author info prediction", "Topic prediction"]
+    st.write("---")
+    menu = ["--select--", "Exploration",  "Topic prediction"] #"Author info prediction",
     page = st.sidebar.selectbox("Choose your page:", menu)
 
     if page =="--select--":
@@ -39,8 +40,8 @@ def main():
     elif page == "Topic prediction":
         show_predict_page_1()
 
-    elif page == "Author info prediction":
-        show_predict_page_2()
+    # elif page == "Author info prediction":
+    #     show_predict_page_2()
 
     elif page == "Exploration":
         show_explore_page()

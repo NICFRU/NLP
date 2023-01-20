@@ -1,12 +1,17 @@
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
+from utils import  html_reader
+
 
 def show_explore_page():
-    st.subheader("Explore Data")
+    st.subheader("Explore the data and results")
 
     st.write(
         """
     ### LOOK AT MY DATA
     """
     )
+
+    html_reader("Hatespeechvergleich-je-Partei.html")
+    html_reader("Hatespeechvergleich-je-Partei-und-Themengebiet.html")
+
+
