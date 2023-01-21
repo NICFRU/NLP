@@ -4,12 +4,11 @@ from time import sleep
 
 from select_page import select_page
 from predict_page_1 import show_predict_page_1
-from predict_page_2 import show_predict_page_2
 from explore_page import show_explore_page
 
 st.set_page_config(
     page_title = "NLP Web App",
-    layout="centered"
+    layout="wide"
     )
 
 def draw_all(key,plot=False):
@@ -20,8 +19,7 @@ def draw_all(key,plot=False):
 
     ## Folgende Pages können gefunden werden
     1. Exploration
-    2. Author info prediction
-    3. Topic prediction 
+    2. Topic prediction 
 
     """)
 
@@ -31,7 +29,7 @@ with st.sidebar:
 def main():
     st.title("NLP Web App")
     st.write("---")
-    menu = ["--select--", "Exploration",  "Topic prediction"] #"Author info prediction",
+    menu = ["--select--", "Exploration",  "Topic prediction"]
     page = st.sidebar.selectbox("Choose your page:", menu)
 
     if page =="--select--":
@@ -39,9 +37,6 @@ def main():
     
     elif page == "Topic prediction":
         show_predict_page_1()
-
-    # elif page == "Author info prediction":
-    #     show_predict_page_2()
 
     elif page == "Exploration":
         show_explore_page()

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from classification import zeroshotNLP, hatespeachNLP, sentimentNLP
+from classification import zeroshotNLP, hatespeachNLP, sentimentNLP, text_splitter, multi_line_zeroshotNLP, multi_line_hatespeachNLP, multi_line_sentimentNLP, multi_line_zeroshotNLP_V2
 from streamlit_toggle import st_toggle_switch
 import time
 import streamlit as st
@@ -51,24 +51,65 @@ def show_predict_page_1():
 
         if hatespeachbox == True: 
             with st.spinner('Hate Speach Erkennung wird durchgeführt...'):
-                hatespeach = hatespeachNLP(txt)
+                prob, pred= hatespeachNLP(txt)
             st.subheader(
             """
             Hate Speach Erkennung mit dem Hate-speech-CNERG/dehatebert-mono-german Modell:
             """
             )
-            st.write(hatespeach)
+            st.write(f"Mit einer Wahrscheinlichkeit von {prob}% sagt das Modell {pred} vorraus.")
 
         if sentimentbox == True:
             with st.spinner('Sentiment Analysis wird durchgeführt...'):
-                sentiment = sentimentNLP(txt)
+                prob, pred = sentimentNLP(txt)
             st.subheader(
             """
             Sentiment Analysis mit dem cardiffnlp/twitter-xlm-roberta-base-sentiment Modell:
             """
             )
-            st.write(sentiment)
+            st.write(f"Mit einer Wahrscheinlichkeit von {prob}% sagt das Modell vorraus, dass dieser Text {pred} ist.")
 
     elif txt != "" and multiline == True:
-        st.write("Bitte gebe einen Text ein!")
-    
+        
+        sentlist = text_splitter(txt)
+
+        if zeroshotbox == True:
+            with st.spinner('Zero Shot Classification wird durchgeführt...'):
+                zfig = multi_line_zeroshotNLP(sentlist)
+            st.subheader(
+            """
+            Multi Text Zero Shot Classification mit dem valhalla/distilbart-mnli-12-1 Modell:
+            """
+            )
+            st.plotly_chart(zfig)
+
+            st.subheader("oder")
+
+            with st.spinner('Zero Shot Classification wird durchgeführt...'):
+                zfig_v2 = multi_line_zeroshotNLP_V2(sentlist)
+            st.subheader(
+            """
+            Multi Text Zero Shot Classification mit dem valhalla/distilbart-mnli-12-1 Modell:
+            """
+            )
+            st.plotly_chart(zfig_v2)
+
+        if hatespeachbox == True:
+            with st.spinner('Hate Speach Erkennung wird durchgeführt...'):
+                hfig = multi_line_hatespeachNLP(sentlist)
+            st.subheader(
+            """
+            Hate Speach Erkennung mit dem Hate-speech-CNERG/dehatebert-mono-german Modell:
+            """
+            )
+            st.plotly_chart(hfig)
+
+        if sentimentbox == True:
+            with st.spinner('Sentiment Analysis wird durchgeführt...'):
+                sfig = multi_line_sentimentNLP(sentlist)
+            st.subheader(
+            """
+            Multi Text Sentiment Analysis mit dem cardiffnlp/twitter-xlm-roberta-base-sentiment Modell
+            """
+            )
+            st.plotly_chart(sfig)
