@@ -38,10 +38,10 @@ brotli-python=1.0.9=py39hc377ac9_7
 brotlipy=0.7.0=py39h1a28f6b_1002
 bzip2=1.0.8=h620ffc9_4
 c-ares=1.18.1=h1a28f6b_0
-ca-certificates=2022.10.11=hca03da5_0
+ca-certificates=2022.4.26=hca03da5_0
 cairo=1.16.0=h73a0509_1013
 catalogue=2.0.7=py39hca03da5_0
-certifi=2022.12.7=py39hca03da5_0
+certifi=2022.6.15=py39hca03da5_0
 cffi=1.15.1=py39h80987f9_3
 chardet=5.1.0=py39h2804cbe_0
 charset-normalizer=2.0.4=pyhd3eb1b0_0
