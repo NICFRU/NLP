@@ -15,7 +15,7 @@ def html_reader(name):
 
 # Plot Generation
 
-@st.cache
+@st.cache(show_spinner=False)
 def getreltopicscore(inputdf):
     inputdf["Anteil"]=0
     for i in inputdf["Topic"].unique():
@@ -25,21 +25,21 @@ def getreltopicscore(inputdf):
 
 
 
-@st.cache
-def getbarchalleparteienvalhalla(): #fällt weg wegen valhalla
+@st.cache(show_spinner=False)
+def getbarchalleparteienvalhalla(): 
     data=pd.read_csv("plotcsv/aggrvalhallatopicdata.csv", sep=";")
     data=getreltopicscore(data).copy()
     fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (Valhalla)")
     return fig
 
-@st.cache
-def getbarcheinzelparteivalhalla(partei):#["AFD","CDU-CSU","GRUENE","LINKE","FDP","SPD"] #fällt weg wegen valhalla
+@st.cache(show_spinner=False)
+def getbarcheinzelparteivalhalla(partei):
     datapre=pd.read_csv("plotcsv/aggrvalhallatopicdata.csv", sep=";")
     data=datapre[datapre["Partei"]==partei].copy()
     fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (Valhalla)")
     return fig
 
-@st.cache
+@st.cache(show_spinner=False)
 def getbarchalleparteientopic_class():
     data=pd.read_csv("plotcsv/aggrtopic_classtopicdata.csv", sep=";")
     data=getreltopicscore(data).copy()
@@ -48,8 +48,8 @@ def getbarchalleparteientopic_class():
 
 
 
-@st.cache
-def getbarcheinzelparteitopic_class(partei):#["AFD","CDU-CSU","GRUENE","LINKE","FDP","SPD"]
+@st.cache(show_spinner=False)
+def getbarcheinzelparteitopic_class(partei):
     datapre=pd.read_csv("plotcsv/aggrtopic_classtopicdata.csv", sep=";")
     data=datapre[datapre["Partei"]==partei].copy()
     fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (topic_class)")

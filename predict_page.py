@@ -1,16 +1,15 @@
 import streamlit as st
 import pandas as pd
-from classification import hatespeechNLP, sentimentNLP, text_splitter, multi_line_zeroshotNLP, multi_line_hatespeechNLP, multi_line_sentimentNLP, multi_line_zeroshotNLP_V2,single_line_zeroshotNLP_V2,single_line_hatespeechNLP,single_line_sentimentNLP
+from classification import text_splitter, multi_line_zeroshotNLP, multi_line_hatespeechNLP, multi_line_sentimentNLP, multi_line_zeroshotNLP_V2,single_line_zeroshotNLP_V2,single_line_hatespeechNLP,single_line_sentimentNLP
 from streamlit_toggle import st_toggle_switch
-import time
 import streamlit as st
 
 
-def show_predict_page_1():
+def show_predict_page():
 
     st.subheader(
     """
-    NLP Frontend-Tool
+    NLP Modelle
     """
     )
 
@@ -19,11 +18,7 @@ def show_predict_page_1():
     Gib hier deinen Text ein:
     """
     )
-
-
-
-
-    txt = st.text_area("Your text:")
+    txt = st.text_area("Your text:",key= "NLP")
 
     colum1, colum2= st.columns(2)
 

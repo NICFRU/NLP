@@ -4,6 +4,9 @@ import yaml
 import pandas as pd
 import re
 import plotly.express as px
+from transformers import AutoTokenizer,AutoConfig,AutoModelForSequenceClassification
+from scipy.special import softmax
+import numpy as np
 
 
 def load_yaml_file(file_path):
@@ -146,10 +149,6 @@ def single_line_hatespeechNLP(text):
     fig = px.bar(df, x="Label", y="Score",color="Label")
 
     return prob, pred, fig
-
-from transformers import AutoTokenizer,AutoConfig,AutoModelForSequenceClassification
-from scipy.special import softmax
-import numpy as np
 
 
 @st.cache(show_spinner=False)

@@ -3,7 +3,8 @@ from time import sleep
 
 
 from select_page import select_page
-from predict_page_1 import show_predict_page_1
+from predict_page import show_predict_page
+from zsm_page import show_nlp_zsmf
 from explore_page import show_explore_page
 
 st.set_page_config(
@@ -17,7 +18,8 @@ def draw_all(key,plot=False):
 
     ## Folgende Pages können gefunden werden
     1. Visualiesierung
-    2. NLP Modelle
+    2. NLP Zusammenfassung
+    3. NLP Modelle
 
     """)
 
@@ -27,17 +29,20 @@ with st.sidebar:
 def main():
     st.title("NLP Frontend")
     st.write("---")
-    menu = ["--select--", "Visualiesierung",  "NLP Modelle"]
+    menu = ["--select--", "Visualiesierung","NLP Zusammenfassung",  "NLP Modelle"]
     page = st.sidebar.selectbox("Choose your page:", menu)
 
     if page =="--select--":
         select_page()
     
     elif page == "NLP Modelle":
-        show_predict_page_1()
+        show_predict_page()
 
     elif page == "Visualiesierung":
         show_explore_page()
+    
+    elif page == "NLP Zusammenfassung":
+        show_nlp_zsmf()
 
 
 
