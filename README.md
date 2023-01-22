@@ -25,6 +25,7 @@ Wichtiger Hinweis!
 <br>
 Während der Installation von Tesseract-OCR wird nach zu installierenden Komponenten bzw. Sprachpaketen gefragt. Hier muss bei den Sprachen German als zusätzliches Sprachpaket gewählt werden, da deutsche Wahlprogramme analysiert werden. Nach der Installation müsste sich in dem Ordner "Tesseract-OCR/tessdata" eine Datei mit dem Namen "deu.traineddata" befinden (siehe Screenshots).
 <br>
+<br>
 ![](git_images/DEU_Language_Package_Installation.png)
 <br>
 <br>
