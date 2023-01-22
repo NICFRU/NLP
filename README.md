@@ -39,7 +39,7 @@ Zusätzlich werden die Anteilsverteilungen der Parteien innerhalb der Themen dar
 ![](./DBVis/AllgTopic.png)
 
 Eine besondere Betrachtung der als Hatespeech klassifizierten Sätze in Verbindung mit Sentiment verknüpft ermöglicht den Vergleich der Parteien allgemein im Bereich Hatespeech und den Vergleich der einzelnen Themen der Parteien im Bereich Hatespeech.
-![](./DBVis/HatespeechParteien.png) | ![](./DBVis/HatespeechParteienTopics.png)
+![alt](./DBVis/HatespeechParteien.png) | ![alt](./DBVis/HatespeechParteienTopics.png)
 
 Die abgebildeten Diagramme sind nur Screenshots und können interaktiv im Frontend betrachtet werden.
 
