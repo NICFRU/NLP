@@ -32,9 +32,12 @@ Der input Ordner ist Ausgangspunkt für die automatisierte End-to-End Pipeline. 
 ## ?) Visualisierung der Ergebnisse(Jan)
 Auf Basis der Daten denen Sentiment, Hatespeech und Topic zugewiesen wurde können Verteilungen zwischen und innerhalb der Parteien dargestellt werden.
 Bei Betrachtung der einzelnen Partei wird eine Themenverteilung erstellt, in der die Häufigkeit der dem Thema zugehörigen Sätze in absoluten Zahlen dargestellt wird.
-Hier exemplarisch für die AFD: ""
+Hier exemplarisch für die AFD: 
+![](./DBVis/Topicverteilung-für-die-AFD.html)
+
 Zusätzlich werden die Anteilsverteilungen der Parteien innerhalb der Themen dargestellt. Ebenfalls zu sehen ist der Anteil der verschiedenen Themen in der Gesamtheit der Wahlprogramme.
 ""
+
 Eine besondere Betrachtung der als Hatespeech klassifizierten Sätze in Verbindung mit Sentiment verknüpft ermöglicht den Vergleich der Parteien allgemein im Bereich Hatespeech und den Vergleich der einzelnen Themen der Parteien im Bereich Hatespeech.
 ""
 ""
