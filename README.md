@@ -29,6 +29,36 @@ Der input Ordner ist Ausgangspunkt für die automatisierte End-to-End Pipeline. 
 -	Auswerten der Texte und Klassifizierung der übergeordneten Themenbereiche 
 -	Explorative Analyse der Artikel, Visualisierungen, evtl. Netzwerkanalysen
 
+
+## LDA
+
+Um die Inhalte der unterschiedlichen Klassen zu analysieren, wurde im ersten Schritt analysiert, ob die Klassen Wirtschaft, Klima, Bildung, Gesundheit, Wissenschaft, soziale Ursachen, Politik und Ideologie, Infrastruktur eine mögliche Abbildung der Texte möglich sind. Daher wurde die inhaltliche Struktur der Texte betrachtet.
+
+ 
+
+ 
+
+## 2) Text Klassifizierungen
+
+### Textklassifikation mit Hand-Crafted-Words:
+
+In der Datei topic_g.yml wurden Wörter definiert, welche auf eine Klasse verweisen und die Grundlage bilden für die Zuordnung von Texten zu einer Klasse. Hierbei wird jene Klasse verwendet, welche basierend auf der höchsten Anzahl an zutreffenden Wörtern vorhanden ist.
+
+
+### Textklassifikation mit Hugging Face
+
+Mithilfe des Modells:     kann eine Klassifizierung der obengenannten Klassen durchgeführt werden und die Texte basierend auf einem vortrainierten Modell zugewiesen werden. Hierbei wird wie bei den Hand Crafter-Words die wahrscheinlichste Klasse als Primärklasse betrachtet. Jedoch die wahrscheinlichsten 3 Klassen werden zusätzlich ausgegeben. Dies ermöglicht eine bessere Bestimmung von Absätzen zu einem bestimmten Thema.
+
+### Sentiment Analyse
+
+Sentiment Analyse bestimmt die Stimmung innerhalb eines Satzes, welche wie die Klassifikation von Hugging face behandelt wird und die Wahrscheinlichkeit durch ein vortrainiertes Modell ergibt. Dabei werden die Sätze abermals einzeln bewertet.
+
+### Hatespeech Analyse
+
+Genauso wie Sentiment Analyse werden die Sätze auf Hatespeech analysiert, dabei muss ein Satz negativ konnotiert sein und Hatespeech aufweisen, um vollständig als Hatespeech klassifiziert zu werden
+
+ 
+
 ## ?) Visualisierung der Ergebnisse(Jan)
 Auf Basis der Daten denen Sentiment, Hatespeech und Topic zugewiesen wurde können Verteilungen zwischen und innerhalb der Parteien dargestellt werden.
 Bei Betrachtung der einzelnen Partei wird eine Themenverteilung erstellt, in der die Häufigkeit der dem Thema zugehörigen Sätze in absoluten Zahlen dargestellt wird.
