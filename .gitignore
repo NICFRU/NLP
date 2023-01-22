@@ -1,8 +1,15 @@
-### Ignore some input
+### Ignore some input files
 input/AFD_Wahlprogramm_2021
 input/CDU-CSU_Wahlprogramm_2021
 input/DIE_GRUENEN_Wahlprogramm_2021
 input/DIE_LINKE_Wahlprogramm_2021
 input/FDP_Wahlprogramm_2021
 input/SPD_Wahlprogramm_2021
+
+input/AFD_Wahlprogramm_2021_BBX_Image
+input/CDU-CSU_Wahlprogramm_2021_BBX_Image
+input/DIE_GRUENEN_Wahlprogramm_2021_BBX_Image
+input/DIE_LINKE_Wahlprogramm_2021_BBX_Image
+input/FDP_Wahlprogramm_2021_BBX_Image
+input/SPD_Wahlprogramm_2021_BBX_Image
 
