@@ -22,8 +22,7 @@ Für die NLP Analyse von Wahlprogrammen via PDF Dateien wird zunächst ein OCR e
 Wichtiger Hinweis!
 <br>
 Während der Installation von Tesseract-OCR wird nach zu installierenden Komponenten bzw. Sprachpaketen gefragt. Hier muss bei den Sprachen German als zusätzliches Sprachpaket gewählt werden, da deutsche Wahlprogramme analysiert werden. Nach der Installation müsste sich in dem Ordner "Tesseract-OCR/tessdata" eine Datei mit dem Namen "deu.traineddata" befinden (siehe Screenshots).
-<img src="./git_images/DEU_Language_Package_Installation.png"
-
+![](git_images/DEU_Language_Package_Installation.png)
 
 ### 1.1) OCR Text Extraction aus PDF Dateien [~ 3h Laufzeit]
 Der Ordner "input" enthält die einzelnen Wahlrprogramme der sechs größten Parteien für die Bundestagswahl 2021 (bereits im Ordner angelegt). Dieser Ordner dient als Ausgangspunkt für die gesamte OCR NLP End-to-End Pipeline. Setze als nächstes den entsprechenden vollständigen Pfad des input Ordners in dem jupyter Notebook "1_OCR_Preprocessing" ein und starte das Notebook nach der Installation aller notwendigen Pakete, die in der Datei requirements.txt angegeben sind. 
