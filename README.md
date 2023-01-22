@@ -33,6 +33,7 @@ Während der Installation von Tesseract-OCR wird nach zu installierenden Kompone
 ### 1.1) OCR Text Extraction aus PDF Dateien [~ 3h Laufzeit]
 Der Ordner "input" enthält die einzelnen Wahlrprogramme der sechs größten Parteien für die Bundestagswahl 2021 (bereits im Ordner angelegt). Dieser Ordner dient als Ausgangspunkt für die gesamte OCR NLP End-to-End Pipeline. Setze als nächstes den entsprechenden vollständigen Pfad des input Ordners in dem jupyter Notebook "1_OCR_Preprocessing" ein (siehe Bild) und starte das Notebook nach der Installation aller notwendigen Pakete, die in der Datei requirements.txt angegeben sind. 
 <br>
+<br>
 ![](git_images/Set_Path_for_OCR.png)
 <br>
 <br>
