@@ -29,7 +29,7 @@ def zeroshotNLP(text):
     topics = load_yaml_file('data/topic_g.yml')
     topic_list=[x.lower() for x in list(topics.keys())+['None']]
     zeroshot = pipeline("zero-shot-classification",
-                      model="valhalla/distilbart-mnli-12-1")
+                      model="facebook/bart-large-mnli")
 
     preddict = zeroshot(text, topic_list)
     df = pd.DataFrame(preddict).drop("sequence",axis =1).head(3)
@@ -100,7 +100,7 @@ def zeroshotNLP_V2(text):
     topics = load_yaml_file('data/topic_g.yml')
     topic_list=[x.lower() for x in list(topics.keys())+['None']]
     zeroshot = pipeline("zero-shot-classification",
-                      model="valhalla/distilbart-mnli-12-1")
+                      model="facebook/bart-large-mnli")
 
     preddict = zeroshot(text, topic_list)
     df = pd.DataFrame(preddict).drop("sequence",axis =1)
@@ -122,7 +122,7 @@ def single_line_zeroshotNLP_V2(text):
     topics = load_yaml_file('data/topic_g.yml')
     topic_list=[x.lower() for x in list(topics.keys())+['None']]
     zeroshot = pipeline("zero-shot-classification",
-                      model="valhalla/distilbart-mnli-12-1")
+                      model="facebook/bart-large-mnli")
 
     preddict = zeroshot(text, topic_list)
     df = pd.DataFrame(preddict).drop("sequence",axis =1)

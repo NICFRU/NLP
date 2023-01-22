@@ -47,7 +47,7 @@ def show_predict_page():
                 zeroshot_plot = single_line_zeroshotNLP_V2(txt)
             st.subheader(
             """
-            Zero Shot Klassifizierung mit dem valhalla/distilbart-mnli-12-1 Modell:
+            Zero Shot Klassifizierung mit dem facebook/bart-large-mnli Modell:
             """
             )
             st.plotly_chart(zeroshot_plot)
@@ -87,7 +87,7 @@ def show_predict_page():
         if zeroshotbox == True:
             st.write(
             """
-            ## Multi Text Zero Shot Klassifizierung mit dem valhalla/distilbart-mnli-12-1 Modell:
+            ## Multi Text Zero Shot Klassifizierung mit dem facebook/bart-large-mnli Modell:
             """
             )
             with st.spinner('Zero Shot Klassifizierung wird durchgeführt...'):
