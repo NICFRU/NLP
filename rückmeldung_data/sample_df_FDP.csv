@@ -1,0 +1,24 @@
+text;topic;label;score;hate_label;hate_score;labels;scores;Top 3
+setzen zudem ausweitung pflegewissenschaft hochschule sodass dual studium pflegebereich berufsfeld personengruppe öffnen;Gesundheit;positiv;0.5309001207351685;neutral;0.984060525894165;Gesundheit;0.4412189126014709;
+brauchen innova tion qualitätssicherung vergleichbarkeit   programm frei demokrat bundestagswahl   schule unterschiedlich leistungsniveau schülerin schüler individuell gerecht;Bildung;neutral;0.7520405650138855;neutral;0.9894000887870787;Bildung;0.405988484621048;
+krisenzeit aktuell covid-pandemie geraten menschenrecht international stark druck;Politik und Ideologie;negativ;0.7858447432518005;neutral;0.9839490056037904;Politik und Ideologie;0.3059751987457275;
+mensch wohnortnah qualitativ hoch- wertig medizinisch versorgung sichern;Gesundheit;neutral;0.4718208611011505;neutral;0.9866122007369996;Gesundheit;0.2667600214481354;
+ältere mensch   alten seniorenwohnheimen zugang schnell internet;Infrastruktur;positiv;0.7753185629844666;neutral;0.983764946460724;Infrastruktur;0.3262622356414795;
+ziel person gut schiene transportieren;Infrastruktur;positiv;0.7444711327552795;neutral;0.9756069183349608;Infrastruktur;0.2417199164628982;
+technologiefeindlichkeit aufbrechen;Wissenschaft;neutral;0.6133444905281067;neutral;0.9890815019607544;Wissenschaft;0.2643937468528747;
+schaffen anreiz investition klimafreundlich technologie;Klima;positiv;0.5986429452896118;neutral;0.9848029613494872;Klima;0.4760853946208954;
+kontinuierlich versorgungssicher heit garantieren eu-mitgliedstaat weiterhin energieimport angewiesen;Infrastruktur;positiv;0.6565644145011902;neutral;0.9868516325950624;Infrastruktur;0.2662490308284759;
+einsatz uploadfilter lehnen immense gefahr meinung kunstfreiheit netz weiterhin;soziale Ursachen;negativ;0.8707379102706909;neutral;0.987703025341034;soziale Ursachen;0.2790508568286896;
+setzen schlüsseltechnologie offen innovationsfördernd rahmenbedingung;Wissenschaft;neutral;0.6405754685401917;neutral;0.9812434315681458;Wissenschaft;0.4573909342288971;
+setzen zudem kooperativ maßnahme überwachung gesetzlich regelung grundlage wissenschaftlich erkenntnis basieren weiterentwickeln;Wissenschaft;neutral;0.7819521427154541;neutral;0.9790048599243164;Wissenschaft;0.6544498801231384;
+pflegend angehörige tragend säule pflegerisch versorgung unser land;soiale Ursachen;neutral;0.7221620082855225;neutral;0.882013201713562;soiale Ursachen;0.4900093972682953;
+stellen wahl;Politik und Ideologie;neutral;0.7328759431838989;neutral;0.9896129965782166;Politik und Ideologie;0.2715567350387573;
+digital landwirtschaft smart farming   frei demokrat chance digitalisie rung landwirtschaft nutzen;Wissenschaft;positiv;0.5140466690063477;neutral;0.9845582842826844;Wissenschaft;0.5999475121498108;
+blick demographisch wandel entwicklung sozialabgabe unvertretbar pflegefinanzierung zukünftig generation abwälzen;Soziale Ursachen;negativ;0.5408053994178772;neutral;0.9708957076072692;Soziale Ursachen;0.2601142823696136;
+;;;;;;;;
+;;;;;;;;
+Legende:;;;;;;;;
+topic=Bildung, Gesundheit, Infrastruktur, Klima, Politik und Ideologie, Wissenschaft, soziale Ursachen, wirtschaft;;;;;;;;
+label = neutral, positiv, negativ;;;;;;;;
+hate_label=neutral, negativ;;;;;;;;
+labels=Bildung, Gesundheit, Infrastruktur, Klima, Politik und Ideologie, Wissenschaft, soziale Ursachen, wirtschaft;;;;;;;;
