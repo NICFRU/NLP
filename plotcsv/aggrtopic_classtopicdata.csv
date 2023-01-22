@@ -1,0 +1,49 @@
+;Partei;Topic;Score
+0;AFD;Politik und Ideologie;840
+1;AFD;wirtschaft;557
+2;AFD;soziale Ursachen;182
+3;AFD;Klima;66
+4;AFD;Gesundheit;107
+5;AFD;Wissenschaft;62
+6;AFD;Bildung;76
+7;AFD;Infrastruktur;23
+8;CDU-CSU;soziale Ursachen;187
+9;CDU-CSU;wirtschaft;897
+10;CDU-CSU;Politik und Ideologie;1247
+11;CDU-CSU;Gesundheit;142
+12;CDU-CSU;Klima;136
+13;CDU-CSU;Infrastruktur;38
+14;CDU-CSU;Wissenschaft;137
+15;CDU-CSU;Bildung;78
+16;GRUENE;soziale Ursachen;729
+17;GRUENE;Politik und Ideologie;1857
+18;GRUENE;wirtschaft;1476
+19;GRUENE;Infrastruktur;60
+20;GRUENE;Bildung;162
+21;GRUENE;Gesundheit;220
+22;GRUENE;Klima;226
+23;GRUENE;Wissenschaft;150
+24;LINKE;wirtschaft;1959
+25;LINKE;Politik und Ideologie;1992
+26;LINKE;soziale Ursachen;436
+27;LINKE;Klima;173
+28;LINKE;Gesundheit;266
+29;LINKE;Infrastruktur;68
+30;LINKE;Bildung;205
+31;LINKE;Wissenschaft;123
+32;FDP;wirtschaft;691
+33;FDP;Politik und Ideologie;987
+34;FDP;soziale Ursachen;190
+35;FDP;Bildung;108
+36;FDP;Wissenschaft;73
+37;FDP;Gesundheit;131
+38;FDP;Klima;71
+39;FDP;Infrastruktur;17
+40;SPD;Politik und Ideologie;614
+41;SPD;wirtschaft;730
+42;SPD;soziale Ursachen;145
+43;SPD;Klima;52
+44;SPD;Gesundheit;79
+45;SPD;Wissenschaft;29
+46;SPD;Infrastruktur;19
+47;SPD;Bildung;45

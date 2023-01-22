@@ -3,7 +3,8 @@ import streamlit as st
 def select_page():
     st.write(
         """ 
-        Das ist eine coole Website wo man verschidene dinge machen kann
+        Folgendes Frontend zeigt die Ergebnisse unseres NLP Projektes, sowie einen Abschnitt wo man eigene Experimente durchführen kann.
+        Hie
         """
         )
 

@@ -1,25 +1,46 @@
 import streamlit as st
-from utils import  html_reader
+from utils import  html_reader,getbarchalleparteienvalhalla,getbarcheinzelparteivalhalla,getbarchalleparteientopic_class,getbarcheinzelparteitopic_class
 
 
 def show_explore_page():
-    st.subheader("Explore the data and results")
+    st.write("## Graphische Analyse der Ergbnisse")
 
     st.write(
         """
-    ### This is the Exploration Part feel free to test everything
+     ### Gebe die Partei an für die die Grafiken geladen werden sollen.
     """
     )
 
 
-    col1, col2= st.columns(2)
-
-    with col1:
-        html_reader("data/Hatespeechvergleich-je-Partei.html")
-
-    with col2:
-        html_reader("data/Hatespeechvergleich-je-Partei-und-Themengebiet.html")
-
-    st.write("---")
+    
     menu = ["--select--","AFD","CDU-CSU","GRUENE","LINKE","FDP","SPD"]
     PTR = st.selectbox("Auswahl der Partei:", menu)
+    
+    if PTR == "--select--":
+        pass
+    else:        
+        colums1, colums2= st.columns(2)
+
+        with colums1:
+            st.plotly_chart(getbarcheinzelparteivalhalla(PTR))
+
+        with colums2:
+            st.plotly_chart(getbarcheinzelparteitopic_class(PTR))
+    
+    st.write("---")
+    st.write(
+        """
+     ### Hatespeech-Vergleich aller Parteien
+    """
+    )
+    colum1, colum2= st.columns(2)
+
+    with colum1:
+        st.plotly_chart(getbarchalleparteienvalhalla())
+        html_reader("data/Hatespeechvergleich-je-Partei.html")
+
+    with colum2:
+        st.plotly_chart(getbarchalleparteientopic_class())
+        html_reader("data/Hatespeechvergleich-je-Partei-und-Themengebiet.html")
+
+    

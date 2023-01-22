@@ -36,11 +36,14 @@ def zeroshotNLP(text):
 
 
 @st.cache(show_spinner=False)
-def hatespeachNLP(text):
-    hate_model_path = "Hate-speech-CNERG/dehatebert-mono-german"
+def hatespeechNLP(text):
+    hate_model_path =  "deepset/bert-base-german-cased-hatespeech-GermEval18Coarse" #"Hate-speech-CNERG/dehatebert-mono-german"
     hate_task = pipeline(
         "text-classification", model=hate_model_path, tokenizer=hate_model_path
     )
+
+    #"deepset/bert-base-german-cased-hatespeech-GermEval18Coarse"
+
     preddict = hate_task(text)[0]
     prob = round(preddict["score"],2)*100
     pred = preddict["label"]
@@ -74,8 +77,8 @@ def multi_line_zeroshotNLP(sentlist):
     return fig
 
 @st.cache(show_spinner=False)
-def multi_line_hatespeachNLP(sentlist):
-    ergebnis = [hatespeachNLP(sent) for sent in sentlist]
+def multi_line_hatespeechNLP(sentlist):
+    ergebnis = [hatespeechNLP(sent) for sent in sentlist]
     df = pd.DataFrame(ergebnis, columns = ["Score", "Prediction"])
     fig = px.bar(df, x="Prediction", y="Score",color="Prediction")
     return fig
@@ -109,3 +112,71 @@ def multi_line_zeroshotNLP_V2(sentlist):
     df = pd.concat(ergebnis)
     fig = px.bar(df, x="Prediction", y="Score",color="Prediction")
     return fig
+
+
+@st.cache(show_spinner=False)
+def single_line_zeroshotNLP_V2(text):
+    topics = load_yaml_file('data/topic_g.yml')
+    topic_list=[x.lower() for x in list(topics.keys())+['None']]
+    zeroshot = pipeline("zero-shot-classification",
+                      model="valhalla/distilbart-mnli-12-1")
+
+    preddict = zeroshot(text, topic_list)
+    df = pd.DataFrame(preddict).drop("sequence",axis =1)
+    df = df.rename({"scores":"Score","labels":"Prediction"},axis="columns")
+    fig = px.bar(df, x="Prediction", y="Score",color="Prediction")
+
+    return fig
+
+@st.cache(show_spinner=False)
+def single_line_hatespeechNLP(text):
+    hate_model_path = "deepset/bert-base-german-cased-hatespeech-GermEval18Coarse"
+    hate_task = pipeline(
+        "text-classification", model=hate_model_path, tokenizer=hate_model_path
+    )
+    preddict = hate_task(text)[0]
+    prob = round(preddict["score"]*100,2)
+    pred = preddict["label"]
+    notprob = 100 - prob
+    if pred == "OFFENSE":
+        notpred = "OTHER"
+    elif pred == "OTHER":
+        notpred = "OFFENSE"
+    df = pd.DataFrame.from_dict({"Label":[pred,notpred],"Score":[prob,notprob]})
+    fig = px.bar(df, x="Label", y="Score",color="Label")
+
+    return prob, pred, fig
+
+from transformers import AutoTokenizer,AutoConfig,AutoModelForSequenceClassification
+from scipy.special import softmax
+import numpy as np
+
+
+@st.cache(show_spinner=False)
+def single_line_sentimentNLP(text):
+    MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
+    tokenizer = AutoTokenizer.from_pretrained(MODEL)
+    config = AutoConfig.from_pretrained(MODEL)
+
+
+    model = AutoModelForSequenceClassification.from_pretrained(MODEL)
+
+    encoded_input = tokenizer(text, return_tensors='pt')
+    output = model(**encoded_input)
+    scores = output[0][0].detach().numpy()
+    scores = softmax(scores)
+    ranking = np.argsort(scores)
+    ranking = ranking[::-1]
+    l = []
+    s = []
+    for i in range(scores.shape[0]):
+        l.append(config.id2label[ranking[i]])
+        s.append(round(scores[ranking[i]]*100,2))
+
+    df = pd.DataFrame.from_dict({"Label":l,"Score":s})
+    fig = px.bar(df, x="Label", y="Score",color="Label")
+    prob = s[0]
+    pred = l[0]
+
+    return prob, pred, fig
+

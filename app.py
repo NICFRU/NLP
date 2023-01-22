@@ -7,19 +7,17 @@ from predict_page_1 import show_predict_page_1
 from explore_page import show_explore_page
 
 st.set_page_config(
-    page_title = "NLP Web App",
+    page_title = "NLP Frontend",
     layout="wide"
     )
 
 def draw_all(key,plot=False):
     st.write("""
-    # NLP Web App
-
-    Das ist eine wundervolle Web-App die NLP Model implementiert hat.
+    # NLP Projekt Frontend
 
     ## Folgende Pages können gefunden werden
-    1. Exploration
-    2. Topic prediction 
+    1. Visualiesierung
+    2. NLP Modelle
 
     """)
 
@@ -27,18 +25,18 @@ with st.sidebar:
     draw_all("sidebar")
 
 def main():
-    st.title("NLP Web App")
+    st.title("NLP Frontend")
     st.write("---")
-    menu = ["--select--", "Exploration",  "Topic prediction"]
+    menu = ["--select--", "Visualiesierung",  "NLP Modelle"]
     page = st.sidebar.selectbox("Choose your page:", menu)
 
     if page =="--select--":
         select_page()
     
-    elif page == "Topic prediction":
+    elif page == "NLP Modelle":
         show_predict_page_1()
 
-    elif page == "Exploration":
+    elif page == "Visualiesierung":
         show_explore_page()
 
 
