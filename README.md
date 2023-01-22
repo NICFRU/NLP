@@ -77,3 +77,22 @@ Eine besondere Betrachtung der als Hatespeech klassifizierten Sätze in Verbindu
 
 Die abgebildeten Diagramme sind nur Screenshots und können interaktiv im Frontend betrachtet werden.
 
+#### Weitere Visualisierungen
+
+Im Folgenden sind jeweils die 10 häufigsten Worte pro Parteiprogramm als Balkendiagramm dargestellt:
+Man kann (vermeintlich) Parteien wie die FDP (wegen dem häufigen Wort "freie"), die SPD (wegen "Parteivostand" auf Platz 10), oder vor allem die AfD mit ihrem sehr nationalen Fokus anhand der häufigsten Wörter erkennen. Bilder bitte anklicken für originale Größe!
+
+##### AfD & FDP:
+
+<img src="./images/words/afd_most_words.jpg" width="480">   <img src="./images/words/fdp_most_words.jpg" width="480">
+
+##### SPD &  CDU/CSU:
+
+<img src="./images/words/spd_most_words.jpg" width="480">   <img src="./images/words/cdu_most_words.jpg" width="480">
+
+##### Die Linke & Die Grünen:
+
+<img src="./images/words/linke_most_words.jpg" width="480"> <img src="./images/words/gruene_most_words.jpg" width="480">
+
+### 4) Summarization
+Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das Frontend können Texte gezielt zusammengefasst werden. Man kann dabei einstellen, wie viele Sätze die Zusammenfassung maximal haben soll.
