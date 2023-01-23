@@ -97,7 +97,10 @@ Man kann (vermeintlich) Parteien wie die FDP (wegen dem häufigen Wort "freie"),
 
 ### 4) Evaluation der Ergebnisse
 Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Sample beziehungsweise eine Stichprobe über alle Modelle und Parteien gezogen. Die Stichproben wurde dabei gleichverteilt über die gegebenen Topics gezogen und anschließend durch uns annotiert. 
-![Topic_Confusion_Matrix](https://user-images.githubusercontent.com/76253309/214072868-5affba4f-606e-4dfe-9c9a-e9e638385930.png)
+
+<img src="[./images/words/linke_most_words.jpg](https://user-images.githubusercontent.com/76253309/214072868-5affba4f-606e-4dfe-9c9a-e9e638385930.png)" width="480">
+
+
 
 ### 5) Summarization
 Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das Frontend können Texte gezielt zusammengefasst werden. Man kann dabei einstellen, wie viele Sätze die Zusammenfassung maximal haben soll.
