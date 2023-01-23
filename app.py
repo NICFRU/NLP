@@ -17,7 +17,7 @@ def draw_all(key,plot=False):
     # NLP Projekt Frontend
 
     ## Folgende Pages können gefunden werden
-    1. Visualiesierung
+    1. Visualisierung
     2. NLP Zusammenfassung
     3. NLP Modelle
 
@@ -29,7 +29,7 @@ with st.sidebar:
 def main():
     st.title("NLP Frontend")
     st.write("---")
-    menu = ["--select--", "Visualiesierung","NLP Zusammenfassung",  "NLP Modelle"]
+    menu = ["--select--", "Visualisierung","NLP Zusammenfassung",  "NLP Modelle"]
     page = st.sidebar.selectbox("Choose your page:", menu)
 
     if page =="--select--":
@@ -38,7 +38,7 @@ def main():
     elif page == "NLP Modelle":
         show_predict_page()
 
-    elif page == "Visualiesierung":
+    elif page == "Visualisierung":
         show_explore_page()
     
     elif page == "NLP Zusammenfassung":

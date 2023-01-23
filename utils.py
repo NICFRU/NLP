@@ -26,24 +26,24 @@ def getreltopicscore(inputdf):
 
 
 @st.cache(show_spinner=False)
-def getbarchalleparteienvalhalla(): 
-    data=pd.read_csv("plotcsv/aggrvalhallatopicdata.csv", sep=";")
+def getbarchalleparteienhuggingface(): 
+    data=pd.read_csv("plotcsv/aggrmDeBERTa.csv", sep=";")
     data=getreltopicscore(data).copy()
-    fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (Valhalla)")
+    fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (huggingface)")
     return fig
 
 @st.cache(show_spinner=False)
-def getbarcheinzelparteivalhalla(partei):
-    datapre=pd.read_csv("plotcsv/aggrvalhallatopicdata.csv", sep=";")
+def getbarcheinzelparteihuggingface(partei):
+    datapre=pd.read_csv("plotcsv/aggrmDeBERTa.csv", sep=";")
     data=datapre[datapre["Partei"]==partei].copy()
-    fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (Valhalla)")
+    fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (huggingface)")
     return fig
 
 @st.cache(show_spinner=False)
 def getbarchalleparteientopic_class():
     data=pd.read_csv("plotcsv/aggrtopic_classtopicdata.csv", sep=";")
     data=getreltopicscore(data).copy()
-    fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (topic_class)")
+    fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (spacy)")
     return fig
 
 
@@ -52,5 +52,5 @@ def getbarchalleparteientopic_class():
 def getbarcheinzelparteitopic_class(partei):
     datapre=pd.read_csv("plotcsv/aggrtopic_classtopicdata.csv", sep=";")
     data=datapre[datapre["Partei"]==partei].copy()
-    fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (topic_class)")
+    fig = px.bar(data, x='Topic', y='Score', text="Score", title="Topicverteilung für die "+partei+" (spacy)")
     return fig

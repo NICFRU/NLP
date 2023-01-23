@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import  html_reader,getbarchalleparteienvalhalla,getbarcheinzelparteivalhalla,getbarchalleparteientopic_class,getbarcheinzelparteitopic_class
+from utils import  html_reader,getbarchalleparteienhuggingface,getbarcheinzelparteihuggingface,getbarchalleparteientopic_class,getbarcheinzelparteitopic_class
 
 
 def show_explore_page():
@@ -22,7 +22,7 @@ def show_explore_page():
         colums1, colums2= st.columns(2)
 
         with colums1:
-            st.plotly_chart(getbarcheinzelparteivalhalla(PTR))
+            st.plotly_chart(getbarcheinzelparteihuggingface(PTR))
 
         with colums2:
             st.plotly_chart(getbarcheinzelparteitopic_class(PTR))
@@ -40,13 +40,13 @@ def show_explore_page():
     st.write("---")
     st.write(
         """
-     ### Hatespeech-Vergleich aller Parteien
+     ### Grafiken über alle Parteien
     """
     )
     colum1, colum2= st.columns(2)
 
     with colum1:
-        st.plotly_chart(getbarchalleparteienvalhalla())
+        st.plotly_chart(getbarchalleparteienhuggingface())
         html_reader("data/Hatespeechvergleich-je-Partei.html")
 
     with colum2:
