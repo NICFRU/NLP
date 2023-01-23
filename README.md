@@ -1,18 +1,34 @@
 # NLP
 
+![](git_images/Parteien_Logo.jpg)
+
 ## Gruppe:
 - Niclas Cramer
 - Niklas Koch
 - Michel Medved
 - Jan Neifeld
 - Constantin Rech
-- Luis Steiner
-
+- Luis Steinert
 
 ## Ziel 
-Basierend auf einer PDF-Dateien eine Klassifizierung der Themen basierend auf den Abschnitten/ Zeilen zu erhalten. Hierbei solle eine visuelle Ansicht auf Besonderheiten/ Erkenntnisse zu identifizieren.
+Wahlprogramme zu Bundestagswahlen sind sehr umfangreich und enthalten viele Informationen zu unterschiedlichsten Themenbereichen. Ziel dieses Projektes ist es eine End-to-End OCR NLP Pipeline zu erstellen, die lediglich die Wahlprogramme als PDF Dateien für die NLP Analyse benötigt. Mit Hilfe von OCR wird der Inhalt der Wahlprogramme in Text umgewandelt, welcher anschließend bei der NLP Analyse verwendet wird. Die Analysen beinhalten unter anderem die Gewichtung von Themen innerhalb der einzelnen Wahlprogramme sowie Vergleiche zwischen den einzelnen Parteien. 
 
 ## Vorgehensweise
+### 1) Installation der Tesseract OCR Engine
+Für die NLP Analyse von Wahlprogrammen via PDF Dateien wird zunächst ein OCR engine benötigt. Für die OCR wurde Tesseract als OCR Engine verwendet (https://github.com/tesseract-ocr/tesseract/tree/main). Für die Installation von Tesseract-OCR folge dem User Manual für das entsprechende OS.
+<br>
+<br>
+(https://pyimagesearch.com/2021/08/16/installing-tesseract-pytesseract-and-python-ocr-packages-on-your-system/).
+<br>
+<br>
+Wichtiger Hinweis!
+<br>
+Während der Installation von Tesseract-OCR wird nach zu installierenden Komponenten bzw. Sprachpaketen gefragt. Hier muss bei den Sprachen German als zusätzliches Sprachpaket gewählt werden, da deutsche Wahlprogramme analysiert werden. Nach der Installation müsste sich in dem Ordner "Tesseract-OCR/tessdata" eine Datei mit dem Namen "deu.traineddata" befinden (siehe Screenshots).
+<br>
+<br>
+![](git_images/DEU_Language_Package_Installation.png)
+<br>
+<br>
 
 ### 1.1) OCR Text Extraction aus PDF Dateien [~ 3h Laufzeit]
 Der Ordner "input" enthält die einzelnen Wahlrprogramme der sechs größten Parteien für die Bundestagswahl 2021 (bereits im Ordner angelegt). Dieser Ordner dient als Ausgangspunkt für die gesamte OCR NLP End-to-End Pipeline. Setze als nächstes den entsprechenden vollständigen Pfad des input Ordners in dem jupyter Notebook "1_OCR_Preprocessing" ein (siehe Bild) und starte das Notebook nach der Installation aller notwendigen Pakete, die in der Datei requirements.txt angegeben sind. 
@@ -60,7 +76,6 @@ Eine besondere Betrachtung der als Hatespeech klassifizierten Sätze in Verbindu
 <img src="./DBVis/HatespeechParteien.png" width="480" >  <img src="./DBVis/HatespeechParteienTopics.png" width="480" >
 
 Die abgebildeten Diagramme sind nur Screenshots und können interaktiv im Frontend betrachtet werden.
-Der Code, auf Basis dessen diese Visualisierungen erstellt werden findet sich unter /DBVis/vis.ipynb , ist aber ebenfalls im Frontend implementiert.
 
 #### Weitere Visualisierungen
 
@@ -75,3 +90,15 @@ Man kann (vermeintlich) Parteien wie die FDP (wegen dem häufigen Wort "freie"),
 
 <img src="./images/words/spd_most_words.jpg" width="480">   <img src="./images/words/cdu_most_words.jpg" width="480">
 
+##### Die Linke & Die Grünen:
+
+<img src="./images/words/linke_most_words.jpg" width="480"> <img src="./images/words/gruene_most_words.jpg" width="480">
+
+
+### 4) Evaluation der Ergebnisse
+Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Sample beziehungsweise eine Stichprobe über alle Modelle und Parteien gezogen. Die Stichproben wurde dabei gleichverteilt über die gegebenen Topics gezogen und anschließend durch uns annotiert. 
+
+<img src="./images/words/DeBert_Confusion_Matrix.png" width="480">
+
+### 5) Summarization
+Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das Frontend können Texte gezielt zusammengefasst werden. Man kann dabei einstellen, wie viele Sätze die Zusammenfassung maximal haben soll.
