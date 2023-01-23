@@ -76,6 +76,7 @@ Eine besondere Betrachtung der als Hatespeech klassifizierten Sätze in Verbindu
 <img src="./DBVis/HatespeechParteien.png" width="480" >  <img src="./DBVis/HatespeechParteienTopics.png" width="480" >
 
 Die abgebildeten Diagramme sind nur Screenshots und können interaktiv im Frontend betrachtet werden.
+Der Code, auf Basis dessen diese Visualisierungen erstellt werden findet sich unter /DBVis/vis.ipynb , ist aber ebenfalls im Frontend implementiert.
 
 #### Weitere Visualisierungen
 
