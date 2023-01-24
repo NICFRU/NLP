@@ -1,4 +1,4 @@
-name: test_nlp_2
+name: NLP_Wahlprogramm
 channels:
   - default
   - conda-forge
