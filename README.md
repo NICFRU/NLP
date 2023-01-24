@@ -3,12 +3,12 @@
 ![](git_images/Parteien_Logo.jpg)
 
 ## Gruppe:
-- Niclas Cramer
-- Niklas Koch
-- Michel Medved
-- Jan Neifeld
-- Constantin Rech
-- Luis Steinert
+- Niclas Cramer (7607733)
+- Niklas Koch (6699912)
+- Michel Medved (9303634)
+- Jan Neifeld (8722662)
+- Constantin Rech (8028907)
+- Luis Steinert (2617416)
 
 ## Ziel 
 Wahlprogramme zu Bundestagswahlen sind sehr umfangreich und enthalten viele Informationen zu unterschiedlichsten Themenbereichen. Ziel dieses Projektes ist es eine End-to-End OCR NLP Pipeline zu erstellen, die lediglich die Wahlprogramme als PDF Dateien für die NLP Analyse benötigt. Mit Hilfe von OCR wird der Inhalt der Wahlprogramme in Text umgewandelt, welcher anschließend bei der NLP Analyse verwendet wird. Die Analysen beinhalten unter anderem die Gewichtung von Themen innerhalb der einzelnen Wahlprogramme sowie Vergleiche zwischen den einzelnen Parteien. 
