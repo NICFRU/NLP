@@ -109,7 +109,7 @@ Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das
 
 Ordner mit Dockerfile downloaden oder einfach nur das Dockerfile downloaden. **Bitte sicherstellen das Docker auf dem Endgerät installiert ist.** 
 
-Mit dem folgenden Befehl wird dann das Docker Image erstellt:
+Im Terminal in den Ordner wechseln, wo das Dockerfile sich befindet und mit dem folgenden Befehl, dass Docker Image erstellen:
 ``` Docker
 docker build -t frontendnlp .
 ```
