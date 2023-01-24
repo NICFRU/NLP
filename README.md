@@ -103,7 +103,9 @@ Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Samp
 ### 5) Summarization
 Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das Frontend können Texte gezielt zusammengefasst werden. Man kann dabei einstellen, wie viele Sätze die Zusammenfassung maximal haben soll.
 
-### Aufrufen des Frontends via Docker
+---
+
+## Aufrufen des Frontends via Docker
 
 Ordner mit Dockerfile downloaden oder einfach nur das Dockerfile downloaden. **Bitte sicherstellen das Docker auf dem Endgerät installiert ist.** 
 
@@ -123,7 +125,7 @@ http://localhost:8501
 ```
 
 
-## Zu beachten:
+### Zu beachten:
 
-Beim erstmaligen Aufruf des Frontend und erstmaligen Ausführung der Modelle, müssen diese erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runter geladen sind, können diese ohne Probleme 
+Beim erstmaligen Aufruf des Frontend und erstmaliger Ausführung der Modelle, müssen diese erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runter geladen sind, können diese ohne Probleme genutzt werden.
 
