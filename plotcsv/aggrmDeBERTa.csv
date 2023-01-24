@@ -1,49 +1,49 @@
-;Partei;Topic;Score
-0;AFD;politik und ideologie;549
-1;AFD;gesundheit;111
-2;AFD;soziale ursachen;283
-3;AFD;infrastruktur;258
-4;AFD;bildung;225
-5;AFD;wirtschaft;392
-6;AFD;wissenschaft;32
-7;AFD;klima;34
-8;CDU-CSU;bildung;356
-9;CDU-CSU;politik und ideologie;609
-10;CDU-CSU;wirtschaft;716
-11;CDU-CSU;soziale ursachen;288
-12;CDU-CSU;klima;110
-13;CDU-CSU;infrastruktur;537
-14;CDU-CSU;gesundheit;167
-15;CDU-CSU;wissenschaft;53
-16;GRUENE;wirtschaft;879
-17;GRUENE;politik und ideologie;1321
-18;GRUENE;bildung;620
-19;GRUENE;infrastruktur;844
-20;GRUENE;soziale ursachen;598
-21;GRUENE;gesundheit;269
-22;GRUENE;wissenschaft;89
-23;GRUENE;klima;241
-24;LINKE;wirtschaft;1258
-25;LINKE;soziale ursachen;984
-26;LINKE;politik und ideologie;936
-27;LINKE;bildung;517
-28;LINKE;gesundheit;314
-29;LINKE;infrastruktur;920
-30;LINKE;klima;173
-31;LINKE;wissenschaft;69
-32;FDP;politik und ideologie;636
-33;FDP;wirtschaft;518
-34;FDP;bildung;320
-35;FDP;soziale ursachen;180
-36;FDP;gesundheit;124
-37;FDP;infrastruktur;356
-38;FDP;klima;75
-39;FDP;wissenschaft;33
-40;SPD;infrastruktur;256
-41;SPD;politik und ideologie;413
-42;SPD;soziale ursachen;324
-43;SPD;wirtschaft;359
-44;SPD;bildung;179
-45;SPD;gesundheit;106
-46;SPD;wissenschaft;16
-47;SPD;klima;52
+;Unnamed: 0;Partei;Topic;Score;Anteil
+0;0;AFD;politik und ideologie;549;0.123
+1;1;AFD;gesundheit;111;0.1017
+2;2;AFD;soziale ursachen;283;0.1065
+3;3;AFD;infrastruktur;258;0.0814
+4;4;AFD;bildung;225;0.1015
+5;5;AFD;wirtschaft;392;0.0951
+6;6;AFD;wissenschaft;32;0.1096
+7;7;AFD;klima;34;0.0496
+8;8;CDU-CSU;bildung;356;0.1606
+9;9;CDU-CSU;politik und ideologie;609;0.1364
+10;10;CDU-CSU;wirtschaft;716;0.1737
+11;11;CDU-CSU;soziale ursachen;288;0.1084
+12;12;CDU-CSU;klima;110;0.1606
+13;13;CDU-CSU;infrastruktur;537;0.1693
+14;14;CDU-CSU;gesundheit;167;0.1531
+15;15;CDU-CSU;wissenschaft;53;0.1815
+16;16;GRUENE;wirtschaft;879;0.2132
+17;17;GRUENE;politik und ideologie;1321;0.2959
+18;18;GRUENE;bildung;620;0.2797
+19;19;GRUENE;infrastruktur;844;0.2662
+20;20;GRUENE;soziale ursachen;598;0.2251
+21;21;GRUENE;gesundheit;269;0.2466
+22;22;GRUENE;wissenschaft;89;0.3048
+23;23;GRUENE;klima;241;0.3518
+24;24;LINKE;wirtschaft;1258;0.3052
+25;25;LINKE;soziale ursachen;984;0.3703
+26;26;LINKE;politik und ideologie;936;0.2097
+27;27;LINKE;bildung;517;0.2332
+28;28;LINKE;gesundheit;314;0.2878
+29;29;LINKE;infrastruktur;920;0.2901
+30;30;LINKE;klima;173;0.2526
+31;31;LINKE;wissenschaft;69;0.2363
+32;32;FDP;politik und ideologie;636;0.1425
+33;33;FDP;wirtschaft;518;0.1257
+34;34;FDP;bildung;320;0.1443
+35;35;FDP;soziale ursachen;180;0.0677
+36;36;FDP;gesundheit;124;0.1137
+37;37;FDP;infrastruktur;356;0.1123
+38;38;FDP;klima;75;0.1095
+39;39;FDP;wissenschaft;33;0.113
+40;40;SPD;infrastruktur;256;0.0807
+41;41;SPD;politik und ideologie;413;0.0925
+42;42;SPD;soziale ursachen;324;0.1219
+43;43;SPD;wirtschaft;359;0.0871
+44;44;SPD;bildung;179;0.0807
+45;45;SPD;gesundheit;106;0.0972
+46;46;SPD;wissenschaft;16;0.0548
+47;47;SPD;klima;52;0.0759

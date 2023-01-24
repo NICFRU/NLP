@@ -16,19 +16,8 @@ def html_reader(name):
 # Plot Generation
 
 @st.cache(show_spinner=False)
-def getreltopicscore(inputdf):
-    inputdf["Anteil"]=0
-    for i in inputdf["Topic"].unique():
-        for j in inputdf[inputdf["Topic"]==i].index:
-            inputdf["Anteil"][j] = round(inputdf["Score"][j]/inputdf[inputdf["Topic"]==i]["Score"].sum(), 4)
-    return inputdf
-
-
-
-@st.cache(show_spinner=False)
 def getbarchalleparteienhuggingface(): 
     data=pd.read_csv("plotcsv/aggrmDeBERTa.csv", sep=";")
-    data=getreltopicscore(data).copy()
     fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (huggingface)")
     return fig
 
@@ -42,7 +31,6 @@ def getbarcheinzelparteihuggingface(partei):
 @st.cache(show_spinner=False)
 def getbarchalleparteientopic_class():
     data=pd.read_csv("plotcsv/aggrtopic_classtopicdata.csv", sep=";")
-    data=getreltopicscore(data).copy()
     fig = px.bar(data, x='Topic', y='Score', color="Partei", text="Anteil", title="Topicverteilung für alle Parteien (spacy)")
     return fig
 
