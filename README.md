@@ -96,7 +96,7 @@ Man kann (vermeintlich) Parteien wie die FDP (wegen dem häufigen Wort "freie"),
 
 
 ### 4) Evaluation der Ergebnisse
-Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Sample beziehungsweise eine Stichprobe über alle Modelle und Parteien gezogen. Die Stichproben wurde dabei gleichverteilt über die gegebenen Topics gezogen und anschließend durch uns annotiert. Die Bewertung der ausgewählten Modelle ist im Notebook eval_Data_Models_Final.ipynb zu finden
+Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Sample beziehungsweise eine Stichprobe über alle Modelle und Parteien gezogen. Die Stichproben wurde dabei gleichverteilt über die gegebenen Topics gezogen und anschließend durch uns annotiert. Die Bewertung der ausgewählten Modelle ist im Notebook eval_Data_Models_Final.ipynb zu finden.
 
 
 
