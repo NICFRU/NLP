@@ -135,3 +135,7 @@ http://localhost:8501
 
 Beim erstmaligen Aufruf des Frontend und erstmaliger Ausführung der Modelle, müssen diese erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runter geladen sind, können diese ohne Probleme genutzt werden.
 
+### Anmerkung:
+Der Code für das Frontend kann entweder in dieses beiden Repos gefunden werden:
+- https://github.com/Coreprog/NLP-Frontend 
+- https://github.com/NICFRU/NLP (Branch: Frontend)
