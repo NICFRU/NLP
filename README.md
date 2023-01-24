@@ -15,7 +15,7 @@ Wahlprogramme zu Bundestagswahlen sind sehr umfangreich und enthalten viele Info
 
 ## Vorgehensweise
 ### 0) Installieren
-Erstellen der Conda umgebung via:
+Erstellen der Conda-Umgebung via:
 ``` Erstellen der Conda umgebung via:
 conda env create -f environment.yml
 ```
