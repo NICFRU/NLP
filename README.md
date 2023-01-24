@@ -14,6 +14,11 @@
 Wahlprogramme zu Bundestagswahlen sind sehr umfangreich und enthalten viele Informationen zu unterschiedlichsten Themenbereichen. Ziel dieses Projektes ist es eine End-to-End OCR NLP Pipeline zu erstellen, die lediglich die Wahlprogramme als PDF Dateien für die NLP Analyse benötigt. Mit Hilfe von OCR wird der Inhalt der Wahlprogramme in Text umgewandelt, welcher anschließend bei der NLP Analyse verwendet wird. Die Analysen beinhalten unter anderem die Gewichtung von Themen innerhalb der einzelnen Wahlprogramme sowie Vergleiche zwischen den einzelnen Parteien. 
 
 ## Vorgehensweise
+### 0) Installieren
+``` Erstellen der Conda umgebung via:
+conda env create -f environment.yml
+```
+
 ### 1) Installation der Tesseract OCR Engine
 Für die NLP Analyse von Wahlprogrammen via PDF Dateien wird zunächst ein OCR engine benötigt. Für die OCR wurde Tesseract als OCR Engine verwendet (https://github.com/tesseract-ocr/tesseract/tree/main). Für die Installation von Tesseract-OCR folge dem User Manual für das entsprechende OS.
 <br>
@@ -107,11 +112,9 @@ Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das
 
 ## Aufrufen des Frontends via Docker
 
-Ordner mit Dockerfile downloaden oder einfach nur das Dockerfile downloaden. 
+Ordner mit Dockerfile downloaden oder einfach nur das Dockerfile downloaden. **Bitte sicherstellen das Docker auf dem Endgerät installiert ist.** 
 
-**!Bitte sicherstellen das Docker auf dem Endgerät installiert ist!** 
-
-Im Terminal/Shell in den Ordner wechseln, wo das Dockerfile sich befindet und mit dem folgenden Befehl, dass Docker Image erstellen:
+Im Terminal in den Ordner wechseln, wo das Dockerfile sich befindet und mit dem folgenden Befehl, dass Docker Image erstellen:
 ``` Docker
 docker build -t frontendnlp .
 ```
@@ -128,9 +131,6 @@ http://localhost:8501
 
 
 ### Zu beachten:
-Das erstellen des Docker Images kann ein wenig dauern da hier das Neviroment erstellt werden muss. Des weiteren muss auch ein Spacy Modell runtergeladen werden. Je nach Internetverbindung kann dies dauern. 
-Auch beim erstmaligen Aufruf des Frontend und erstmaliger Ausführung der Modelle, müssen diese Modelle erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runtergeladen sind, können diese ohne Probleme genutzt werden.
 
-
-
+Beim erstmaligen Aufruf des Frontend und erstmaliger Ausführung der Modelle, müssen diese erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runter geladen sind, können diese ohne Probleme genutzt werden.
 
