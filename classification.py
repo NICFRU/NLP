@@ -331,6 +331,6 @@ def multi_spacy_model(sentlist):
     for text in sentlist:
         sent.append(text_lemma(text,nlp))
     df = get_topical_sentences(sent, topics,1)
-    fig_df = pd.DataFrame().from_dict({"Prediction":list(df["labels"])[0],"Score":list(df["score"][0])})
+    fig_df = pd.DataFrame().from_dict({"Prediction":list(df["labels"])[0],"Score":[sum(i) for i in zip(*df.score)]})
     fig = px.bar(fig_df, x="Prediction", y="Score",color="Prediction")
     return fig
