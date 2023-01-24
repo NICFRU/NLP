@@ -3,12 +3,12 @@
 ![](git_images/Parteien_Logo.jpg)
 
 ## Gruppe:
-- Niclas Cramer
-- Niklas Koch
-- Michel Medved
-- Jan Neifeld
-- Constantin Rech
-- Luis Steinert
+- Niclas Cramer (7607733)
+- Niklas Koch (6699912)
+- Michel Medved (9303634)
+- Jan Neifeld (8722662)
+- Constantin Rech (8028907)
+- Luis Steinert (2617416)
 
 ## Ziel 
 Wahlprogramme zu Bundestagswahlen sind sehr umfangreich und enthalten viele Informationen zu unterschiedlichsten Themenbereichen. Ziel dieses Projektes ist es eine End-to-End OCR NLP Pipeline zu erstellen, die lediglich die Wahlprogramme als PDF Dateien für die NLP Analyse benötigt. Mit Hilfe von OCR wird der Inhalt der Wahlprogramme in Text umgewandelt, welcher anschließend bei der NLP Analyse verwendet wird. Die Analysen beinhalten unter anderem die Gewichtung von Themen innerhalb der einzelnen Wahlprogramme sowie Vergleiche zwischen den einzelnen Parteien. 
@@ -102,3 +102,30 @@ Um die dargestellten NLP-Modelle (aus Abschnitt 2) zu evaluieren, wurde ein Samp
 
 ### 5) Summarization
 Für das Zusammenfassen von Texten wird u.A. das Modul "sumy" genutzt. Über das Frontend können Texte gezielt zusammengefasst werden. Man kann dabei einstellen, wie viele Sätze die Zusammenfassung maximal haben soll.
+
+---
+
+## Aufrufen des Frontends via Docker
+
+Ordner mit Dockerfile downloaden oder einfach nur das Dockerfile downloaden. **Bitte sicherstellen das Docker auf dem Endgerät installiert ist.** 
+
+Mit dem folgenden Befehl wird dann das Docker Image erstellt:
+``` Docker
+docker build -t frontendnlp .
+```
+
+Wenn das Image erstellt ist, wird das Image mit folgendem Befehl ausgeführt:
+``` Docker
+docker run -p 8501:8501 frontendnlp
+```
+
+Nachdem das Image nun läuft, kann im Browser folgender localhost aufgerufen werden:
+```
+http://localhost:8501
+```
+
+
+### Zu beachten:
+
+Beim erstmaligen Aufruf des Frontend und erstmaliger Ausführung der Modelle, müssen diese erst vom Huggigface Hub runtergeladen werden. Dies könnte je nach Internet Verbindung seine Zeit brauchen. Sobald diese jedoch einmal runter geladen sind, können diese ohne Probleme genutzt werden.
+
